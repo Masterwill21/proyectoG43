@@ -29,9 +29,9 @@ No.	INTEGRANTES	                     ROLES
 1	William Fernando Hernandez Galvis  SCRUM MASTER
 2	Lorena Maritza Neuta Palacios      DEVELOPER
 3	Camila Alexandra Rondon Archila	   QA ANALYST (TESTER)
-4	Karen Jiliam Cortes Navarro	       DESIGNER
-5	Abner Emilio Villegas Barrera	     STAKEHOLDERS
-6	Yulie Briyith Bernal Castillo	     PRODUCT OWNER
+4	Karen Jiliam Cortes Navarro        DESIGNER
+5	Abner Emilio Villegas Barrera      STAKEHOLDERS
+6	Yulie Briyith Bernal Castillo      PRODUCT OWNER
 
 Descripción del proyecto:
 
