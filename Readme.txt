@@ -19,20 +19,19 @@ aaaaaaaa 88      88888 ,d8"     88       ""Y8,
           Y8a.    .a88          88  Y8,     a88  
            `"Y88888P"           88   "Y888888P'  
                                                  
-
  ___    _ _                   __      __   _         _       ___        _ _    _        
 / __|__(_) |_ ___ _ __  __ _  \ \    / /__| |__   __| |___  | _ \___ __| (_)__| |___ ___
 \__ (_-< |  _/ -_) '  \/ _` |  \ \/\/ / -_) '_ \ / _` / -_) |  _/ -_) _` | / _` / _ (_-<
 |___/__/_|\__\___|_|_|_\__,_|   \_/\_/\___|_.__/ \__,_\___| |_| \___\__,_|_\__,_\___/__/
                                                                                         
 
-No.	INTEGRANTES	   ROLES
-1	William Hernández  SCRUM MASTER
-2	Lorena Neuta	   DEVELOPER
-3	Camila Rodón	   QA ANALYST (TESTER)
-4	Karen Cortes	   DESIGNER
-5	Emilio Villegas	   STAKEHOLDERS
-6	Yulie Bernal	   PRODUCT OWNER
+No.	INTEGRANTES	                     ROLES
+1	William Fernando Hernandez Galvis  SCRUM MASTER
+2	Lorena Maritza Neuta Palacios      DEVELOPER
+3	Camila Alexandra Rondon Archila	   QA ANALYST (TESTER)
+4	Karen Jiliam Cortes Navarro	       DESIGNER
+5	Abner Emilio Villegas Barrera	     STAKEHOLDERS
+6	Yulie Briyith Bernal Castillo	     PRODUCT OWNER
 
 Descripción del proyecto:
 
