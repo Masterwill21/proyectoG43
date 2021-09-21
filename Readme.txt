@@ -34,15 +34,6 @@ No.	INTEGRANTES	   ROLES
 5	Emilio Villegas	   STAKEHOLDERS
 6	Yulie Bernal	   PRODUCT OWNER
 
-Se realizan las entregas de los diferentes compromisos, que son los Diagramas de casos de uso UML para perfiles:
-
-1. Diagrama Inicio de sesión
-2. Diagrama Pedido
-3. Diagrama Entidad relación
-4. Diagrama Gestión en línea
-5. Diagrama perfil administrador
-6. Diagramas creación de productos
-
 Descripción del proyecto:
 
 Crear un sistema web para la realización de pedidos donde los clientes puedan iniciar sesión de forma segura, crear pedidos donde relacionan los productos disponibles, validando existencias y actualizando la cantidad de inventario y muestra reporte de pedidos totalizando el valor de los productos seleccionados.
