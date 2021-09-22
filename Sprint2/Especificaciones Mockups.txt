@@ -1,0 +1,15 @@
+Tareas para cada miembro:
+
+William Fernando Hernandez Galvis: Mockup y HTML Main y reportes (main.html y reportes.html)
+
+Lorena Maritza Neuta Palacios: Mockup y HTML Producto (producto.html)
+
+Camila Alexandra Rondon Archila: Mockup y HTML Crear Usuario (usuario.html)
+
+Karen Jiliam Cortes Navarro: Mockup y HTML (pedido_cliente.html)
+
+Abner Emilio Villegas Barrera: Mockup y HTML incio de sesión (index.html)
+
+Yulie Briyith Bernal Castillo: Mockup y HTML (reporte_general.html)
+
+Todos los formularios excepto 'Inicio de Sesión' deben tene un menu 'Nav' en el Header con el enlace a los demas HTML. Apartir del diagrama de la Base de datos deben crear los campos de cada formulario. (Tamaño formulario 1280 x 720p)
