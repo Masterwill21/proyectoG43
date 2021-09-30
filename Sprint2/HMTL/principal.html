@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RappiPedidosGrp5</title>
+</head>
+<body>
+  <div style="clear: both">
+    <img src="img/logo_pedidos.png" alt="img/no-image.png" width="120" height="60" style="float: left">
+    <h1 style="text-align:center">RappiPedidosGrp5</h1>
+  </div>
+  <br>
+  <br>
+  <ul>
+    <li><a href="principal.html">Principal</a></li>
+    <li><a href="#">Usuario</a></li>
+    <li><a href="#">Producto</a></li>
+    <li>Pedido
+        <ul>
+            <li><a href="pedidos.html">Pedido</a></li>
+            <li><a href="crearpedido.html">Crear Pedido</a></li>
+            <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+            <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+            <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+        </ul>
+    </li>
+</ul>
+  <!-- <nav>
+    <p><a href="principal.html">Principal</a> | <a href="#">Usuario</a> | <a href="#">Producto</a> | <a href="pedidos.html">Pedido</a></p>
+  </nav> -->
+  <p>
+    <h3>Integrantes:</h3>
+    <ul>
+      <li>William Fernando Hernandez Galvis  SCRUM MASTER</li>
+      <li>Lorena Maritza Neuta Palacios      DEVELOPER</li>
+      <li>Camila Alexandra Rondon Archila	   QA ANALYST (TESTER)</li>
+      <li>Karen Jiliam Cortes Navarro        DESIGNER</li>
+      <li>Abner Emilio Villegas Barrera      STAKEHOLDERS
+      <li>Yulie Briyith Bernal Castillo      PRODUCT OWNER</li>
+    </ul>
+    <br>
+    <h3>Descripción del proyecto:</h3>
+    <p>
+      Crear un sistema web para la realización de pedidos donde los clientes puedan iniciar sesión de
+    forma segura, crear pedidos donde relacionan los productos disponibles, validando existencias y 
+    actualizando la cantidad de inventario y muestra reporte de pedidos totalizando el valor de los
+    productos seleccionados.
+    </p>
+  </p>
+  <br>
+  <div class="col " style="text-align: center;">
+    <p>¡Bienvenido al sistema de pedidos Web RappiPedidosGrp5! <span id="datetime"></span></p>
+    <a href="mailto:soportepedidos@gmail.com">Contactenos</a>
+  </div>
+  <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+  </script>
+</body>
+</html>
