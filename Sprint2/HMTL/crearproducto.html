@@ -30,73 +30,72 @@
         </li>
     </ul>
     <h2>Agregar un Producto</h2>
-    <div>
-      <form action="#">
-        <label for="codigoprod">Código del producto</label>
-        <input
-          type="text"
-          id="codigoprod"
-          maxlength="11"
-          name="código producto"
-          disabled
-        />
-        
-        <label for="nombreprod">nombre del producto</label>
-        <input
-          type="text"
-          id="nombreprod"
-          maxlength="120"
-          name="nombre producto"
-          placeholder="Escribir el nombre del producto"
-        />
-        <label for="descripcion" >Descripción del producto</label>
-        <textarea  name="descripcion" id="descripcion"></textarea>
-        
-        <label for="estado">Estado Producto:</label>
-        <select name="estado" id="estado">
-          <option value="Seleccionar">Seleccionar</option>
-          <option value="Activo">Activo</option>
-          <option value="Inactivo">Inactivo</option>
-        </select>
-
-        </div>
-        <br><br>
-
-        <div>
-
-        <label for="cantidad">Cantidad</label>
-        <input
-          type="text"
-          id="cantidad"
-          maxlength="11"
-          name="cantidad"
-          placeholder="Escribir la cantidad disponible"
-        />
-        
-        <label for="costo">Costo Unitario</label>
-        <input
-          type="text"
-          id="costo"
-          name="costo"
-          placeholder="Escribir costo unitario"
-        />
-        <label for="precio">Precio Unitario</label>
-        <input
-          type="text"
-          id="precio"
-          name="precio"
-          placeholder="Escribir precio de venta unitario"
-        />
-        <br><br>
-        <div>
-          <label for="imagen">Imagen del Producto</label>
-            <input type="file"  name="imagen" id="imagen" onchange="upload_image(11);">
-        </div>
-        <br><br>
-        <div>
-          <input type="submit" value="Agregar Producto" />
-          <input type="submit" value="Salir" />
-        </div>
+    <div>       
+        <form action="#">
+          <label for="codigoprod">Código del producto</label>
+          <input
+            type="text"
+            id="codigoprod"
+            maxlength="11"
+            name="código producto"
+            disabled
+          />
+          <label for="nombreprod">nombre del producto</label>
+          <input
+            type="text"
+            id="nombreprod"
+            maxlength="120"
+            name="nombre producto"
+            placeholder="Escribir el nombre del producto"
+          />
+          <label for="estado">Estado Producto:</label>
+          <select name="estado" id="estado">
+            <option value="Seleccionar">Seleccionar</option>
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
+          </select>
+          <br><br>
+          <label for="descripcion" >Descripción del producto</label>
+          <textarea  name="descripcion" id="descripcion" cols="120"></textarea>
+          </div>
+          <br><br>
+  
+          <div>
+  
+          <label for="cantidad">Cantidad</label>
+          <input
+            type="text"
+            id="cantidad"
+            maxlength="11"
+            name="cantidad"
+            placeholder="Escribir la cantidad disponible"
+          />
+          
+          <label for="costo">Costo Unitario</label>
+          <input
+            type="text"
+            id="costo"
+            name="costo"
+            placeholder="Escribir costo unitario"
+          />
+          <label for="precio">Precio Unitario</label>
+          <input
+            type="text"
+            id="precio"
+            name="precio"
+            placeholder="Escribir precio de venta unitario"
+          />
+          <br><br>
+          <div>
+            <label for="imagen">Imagen del Producto</label>
+              <input type="file"  name="imagen" id="imagen" onchange="upload_image(11);">
+          </div>
+          <br><br>
+          <div>
+            <input type="submit" value="Agregar Producto" />
+            <input type="submit" value="Salir" />
+          </div>
+        </form>
         
 </body>
 
