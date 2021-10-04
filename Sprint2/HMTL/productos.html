@@ -15,23 +15,25 @@
       </div>
       <br>
       <br>
-      <ul>
-        <li><a href="principal.html">Principal</a></li>
-        <li><a href="#">Usuario</a></li>
-        <li><a href="#">Producto</a></li>
-        <li>Pedido
-            <ul>
-                <li><a href="pedidos.html">Pedido</a></li>
-                <li><a href="crearpedido.html">Crear Pedido</a></li>
-                <li><a href="modificarpedido.html">Modificar Pedido</a></li>
-                <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
-                <li><a href="consultaReporte.html">Reporte Pedido</a></li>
-            </ul>
-        </li>
-    </ul>
+      <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="principal.html">Principal</a></li>
+            <li><a href="creaciondeusu.html">Usuario</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="pedidos.html">Pedidos</a>
+                <ul class="submenu">
+                    <li><a href="crearpedido.html">Crear Pedido</a></li>
+                    <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+                    <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+                    <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    
     <div>
       <h2>Consulta de productos</h2>
-      <form action="#"></form>
+      <form action="#">
       <label for="idproducto">código producto :</label>
       <input type="text" id="idproducto" size="15" value="Digite ID producto">
       <br>
@@ -39,8 +41,10 @@
       <input type="text" id="nombreproducto" size="30" value="Digite nombre producto">
       <br>
       <br>
-      <input type="submit" value="Consultar">
-      <input type="submit" value="Nuevo Producto">
+      <input type="submit" value="Consultar" >
+      </form>
+      <form action="crearproducto.html"> <!--se realiza otro form para que pueda referenciar el html de creación-->
+        <input type="submit" value="Nuevo Producto"  > 
       </form>
     </div>
     <br>
@@ -81,7 +85,10 @@
     <br>
     <br>
     <input type="submit" value="imprimir">
-    <input type="submit" value="cerrar"> 
+    <form action="principal.html">
+        <input type="submit" value="cerrar"> 
+      </form>
+   
 
 </body>
 

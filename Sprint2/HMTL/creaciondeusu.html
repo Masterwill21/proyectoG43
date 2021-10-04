@@ -1,59 +1,125 @@
-<body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Productos</title>
+  </head>
 
-    <header>
-        <img src="#" alt="#">
-        <img src="#" alt="">
-    </header>
-        <H2>RappipedidoGrd5</H2>
-        <ul>
-            <li><a href="principal.html">Principal</a></li>
-            <li><a href="#">Usuario</a></li>
-            <li><a href="#">Producto</a></li>
-            <li>Pedido
-                <ul>
-                    <li><a href="pedidos.html">Pedido</a></li>
-                    <li><a href="crearpedido.html">Crear Pedido</a></li>
-                    <li><a href="modificarpedido.html">Modificar Pedido</a></li>
-                    <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
-                    <li><a href="consultaReporte.html">Reporte Pedido</a></li>
-                </ul>
-            </li>
-        </ul>
-            </nav>
+  <body>
+    <div style="clear: both">
+      <img
+        src="img/logo_pedidos.png"
+        alt="img/no-image.png"
+        width="120"
+        height="60"
+        style="float: left"
+      />
+      <h1 style="text-align: center">RappiPedidosGrp5</h1>
+    </div>
+    <br />
+    <br />
+    <nav class="navegacion">
+      <ul class="menu">
+        <li><a href="principal.html">Principal</a></li>
+        <li><a href="creaciondeusu.html">Usuario</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li>
+          <a href="pedidos.html">Pedidos</a>
+          <ul class="submenu">
+            <li><a href="crearpedido.html">Crear Pedido</a></li>
+            <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+            <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+            <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
     <div>
-
-        <h2><select name="estado" id="estado">
-        <option value="pendiente">usuario</option>
-        </select></h2>
-
-        <form action="#"></form>
+      <form action="#">
         <label for="fname">Identificacion:</label>
-        <input type="number" id="fname" size="15" value="Digite Cedula ID">
-        <br>
+        <input
+          type="texto"
+          id="fname"
+          size="15"
+          placeholder="Digite Cedula ID"
+          required
+        />
+        <br />
         <label for="fname">Nombre: </label>
-        <input type="password" id="fname" size="15">
-        <br>
+        <input
+          type="texto"
+          id="fname"
+          size="15"
+          placeholder="Digite su nombre"
+          required
+        />
+        <br />
         <label for="fname">Apellido: </label>
-        <input type="password" id="fname" size="15">
-        <br>
+        <input
+          type="texto"
+          id="fname"
+          size="15"
+          placeholder="Digite su apellido"
+          required
+        />
+        <br />
         <label for="fname">Telefono: </label>
-        <input type="password" id="fname" size="15">
-        <br>
+        <input
+          type="texto"
+          id="fname"
+          size="15"
+          placeholder="Digite su telefono"
+          required
+        />
+        <br />
         <label for="fname">correo: </label>
-        <input type="password" id="fname" size="15">
-        <br>
+        <input
+          type="iemail"
+          id="fname"
+          size="15"
+          placeholder="Digite su email"
+          required
+        />
+        <br />
         <label for="fname">Usuario: </label>
-        <input type="password" id="fname" size="15">
-        <br>
+        <input
+          type="texto"
+          id="fname"
+          size="15"
+          placeholder="Digite su usuario"
+          required
+        />
+        <br />
         <label for="fname">Contraseña: </label>
-        <input type="password" id="fname" size="15">
-        <br>
-        <br>
-        <br>
-        <br>
-    <input type="submit" value="Crear">
-    <input type="submit" value="Editar"> 
-</body>
-
+        <input
+          type="password"
+          id="fname"
+          size="15"
+          placeholder="Digite su contraseña"
+          required
+        />
+        <br />
+        <label for="tipousuario">Tipo de usuario :</label>
+        <select name="tipousuario" id="tipousuario">
+          <option value="cliente">Cliente</option>
+          <option value="administrador">Administrador</option>
+        </select>
+        <br />
+        <label for="estado">Estado :</label>
+        <select name="estado" id="estado">
+          <option value="acitvo">Activo</option>
+          <option value="inactivo">inactivo</option>
+        </select>
+        <br /><br />
+        <input type="submit" value="Crear" />
+        <input type="submit" value="Editar" />
+      </form>
+    </div>
+    <form action="principal.html">
+      <input type="submit" value="Salir" />
+    </form>
+  </body>
 </html>
-

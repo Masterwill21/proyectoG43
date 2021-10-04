@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crear Producto</title>
+    <title>Productos</title>
 </head>
 
 <body>
@@ -15,20 +15,23 @@
       </div>
       <br>
       <br>
-      <ul>
-        <li><a href="principal.html">Principal</a></li>
-        <li><a href="#">Usuario</a></li>
-        <li><a href="#">Producto</a></li>
-        <li>Pedido
-            <ul>
-                <li><a href="pedidos.html">Pedido</a></li>
-                <li><a href="crearpedido.html">Crear Pedido</a></li>
-                <li><a href="modificarpedido.html">Modificar Pedido</a></li>
-                <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
-                <li><a href="consultaReporte.html">Reporte Pedido</a></li>
-            </ul>
-        </li>
-    </ul>
+      <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="principal.html">Principal</a></li>
+            <li><a href="creaciondeusu.html">Usuario</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="pedidos.html">Pedidos</a>
+                <ul class="submenu">
+                    <li><a href="crearpedido.html">Crear Pedido</a></li>
+                    <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+                    <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+                    <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+
+
     <h2>Agregar un Producto</h2>
     <div>       
         <form action="#">
@@ -47,6 +50,7 @@
             maxlength="120"
             name="nombre producto"
             placeholder="Escribir el nombre del producto"
+            required
           />
           <label for="estado">Estado Producto:</label>
           <select name="estado" id="estado">
@@ -56,12 +60,10 @@
           </select>
           <br><br>
           <label for="descripcion" >Descripción del producto</label>
-          <textarea  name="descripcion" id="descripcion" cols="120"></textarea>
+          <textarea  name="descripcion" id="descripcion" cols="120" required></textarea>
           </div>
           <br><br>
-  
           <div>
-  
           <label for="cantidad">Cantidad</label>
           <input
             type="text"
@@ -69,6 +71,7 @@
             maxlength="11"
             name="cantidad"
             placeholder="Escribir la cantidad disponible"
+            required
           />
           
           <label for="costo">Costo Unitario</label>
@@ -77,6 +80,7 @@
             id="costo"
             name="costo"
             placeholder="Escribir costo unitario"
+            required
           />
           <label for="precio">Precio Unitario</label>
           <input
@@ -84,18 +88,21 @@
             id="precio"
             name="precio"
             placeholder="Escribir precio de venta unitario"
+            required
           />
           <br><br>
           <div>
             <label for="imagen">Imagen del Producto</label>
               <input type="file"  name="imagen" id="imagen" onchange="upload_image(11);">
-          </div>
-          <br><br>
-          <div>
-            <input type="submit" value="Agregar Producto" />
-            <input type="submit" value="Salir" />
+              <br>
+              <input type="submit" value="Agregar Producto" >
           </div>
         </form>
+        <div>
+          <form action="productos.html">
+            <input type="submit" value="Salir"> 
+          </form>
+        </div>
         
 </body>
 
