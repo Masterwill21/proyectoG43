@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="ancho">
+        <div class="logo">
+          <img src="img/logo_pedidos.png" alt="" />
+        </div>
+
+        <h1>RappiPedidosGrp5</h1>
+        
+        <a href="index.html" class="btn">CerrarSesión</a>
+
+        <nav class="navegacion">
+          <ul class="menu">
+            <li><a href="principal.html">Principal</a></li>
+            <li><a href="creaciondeusu.html">Usuario</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li>
+              <a href="pedidos.html">Pedidos</a>
+              <ul class="submenu">
+                <li><a href="crearpedido.html">Crear Pedido</a></li>
+                <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+                <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+                <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="tabla">
+      <h2>Listado de Ordenes de Pedido</h2>
+      <table>
+        <tr>
+          <th>N° pedido</th>
+          <th>Fecha</th>
+          <th>Cliente</th>
+          <th>Estado</th>
+          <th>Total</th>
+          <th>Acción</th>
+        </tr>
+        <tr>
+          <td>00000000001</td>
+          <td>21/09/2021</td>
+          <td>Mária Cecilia Gómez</td>
+          <td>Pendiente</td>
+          <td>$475,000</td>
+          <td>
+            <form action="modificarpedido.html">
+              <input type="submit" value="Modificar" />
+            </form>
+            <input type="submit" value="Eliminar" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
