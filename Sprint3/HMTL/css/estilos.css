@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Dosis", sans-serif; /* fuente principal*/
+  background-color: ghostwhite;
+  width: 100%;
+  height: 70px;
+}
+
+.ancho {
+  /*clases*/
+  width: 100%;
+  height: 70px;
+  margin: auto;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  float: left;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: #3d1f72;
+  font-family: "Seymour One", sans-serif;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30 px;
+  color:rgb(80, 80, 80);
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow:hidden;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color:black;
+  box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+}
+
+nav {
+  width: 70%;
+  height: 70px;
+  float: left;
+  text-align: center;
+}
+
+.navegacion {
+  width: 100%;
+  margin: 30px auto;
+  background: #3d1f72;
+}
+.navegacion ul {
+  list-style: none;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 50px;
+  color: #ab5dec;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #00ffe2;
+  transition: all 0.3s;
+}
+
+.submenu {
+  position: absolute;
+  background: #3d1f72;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: #ab5dec;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tabla {
+  font-family: "Varela", sans-serif;
+  color: rgb(80, 80, 80);
+}
