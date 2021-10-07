@@ -27,38 +27,46 @@ header {
 }
 
 img {
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 90px;
   float: left;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 30px;
 }
 
 h1 {
   float: left;
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   color: #3d1f72;
   font-family: "Seymour One", sans-serif;
+  margin-top: 10px;
 }
 
 .btn {
+  border-style: dashed;
   position: relative;
-  display: inline-block;
+  float:right;
+  margin-top:20px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 15px 30 px;
   color:rgb(80, 80, 80);
-  letter-spacing: 4px;
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   overflow:hidden;
   transition: 0.2s;
+  
 }
 
 .btn:hover {
-  background-color:black;
-  box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+  background: #ab5dec;
+  box-shadow: 0 0 10px #ab5dec, 0 0 40px #ab5dec, 0 0 80px #ab5dec;
+  transition-delay:0.3s;
 }
+
 
 nav {
   width: 70%;
