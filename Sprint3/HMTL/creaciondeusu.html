@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Creación de Usuario</title>
+  </head>
+
+  <body>
+    <div style="clear: both">
+      <img
+        src="img/logo_pedidos.png"
+        alt="img/no-image.png"
+        width="120"
+        height="60"
+        style="float: left"
+      />
+      <h1 style="text-align: center">RappiPedidosGrp5</h1>
+    </div>
+    <br />
+    <br />
+    <nav class="navegacion">
+      <ul class="menu">
+        <li><a href="principal.html">Principal</a></li>
+        <li><a href="creaciondeusu.html">Usuario</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li>
+          <a href="pedidos.html">Pedidos</a>
+          <ul class="submenu">
+            <li><a href="crearpedido.html">Crear Pedido</a></li>
+            <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+            <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+            <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <form action="#">
+        <label for="id">Identificacion:</label>
+        <input
+          type="text"
+          id="id"
+          size="15"
+          placeholder="Digite Cedula ID"
+          required
+        />
+        <br />
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          id="nombre"
+          size="15"
+          placeholder="Digite su nombre"
+          required
+        />
+        <br />
+        <label for="apellido">Apellido: </label>
+        <input
+          type="text"
+          id="apellido"
+          size="15"
+          placeholder="Digite su apellido"
+          required
+        />
+        <br />
+        <label for="telefono">Telefono: </label>
+        <input
+          type="text"
+          id="telefono"
+          size="15"
+          placeholder="Digite su telefono"
+          required
+        />
+        <br />
+        <label for="correo">correo: </label>
+        <input
+          type="email"
+          id="correo"
+          size="15"
+          placeholder="Digite su email"
+          required
+        />
+        <br />
+        <label for="usuario">Usuario: </label>
+        <input
+          type="text"
+          id="usuario"
+          size="15"
+          placeholder="Digite su usuario"
+          required
+        />
+        <br />
+        <label for="contrasena">Contraseña: </label>
+        <input
+          type="password"
+          id="contrasena"
+          size="15"
+          placeholder="Digite su contraseña"
+          required
+        />
+        <br />
+        <label for="tipousuario">Tipo de usuario :</label>
+        <select name="tipousuario" id="tipousuario">
+          <option value="cliente">Cliente</option>
+          <option value="administrador">Administrador</option>
+        </select>
+        <br />
+        <label for="estado">Estado :</label>
+        <select name="estado" id="estado">
+          <option value="acitvo">Activo</option>
+          <option value="inactivo">inactivo</option>
+        </select>
+        <br /><br />
+        <input type="submit" value="Crear" />
+        <input type="submit" value="Editar" />
+      </form>
+    </div>
+    <form action="principal.html">
+      <input type="submit" value="Salir" />
+    </form>
+  </body>
+</html>
