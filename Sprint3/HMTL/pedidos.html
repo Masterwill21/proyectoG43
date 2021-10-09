@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/eff4ab0e98.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -53,14 +54,17 @@
     <div class="tabla">
       <h2>Listado de Ordenes de Pedido</h2>
       <table>
-        <tr>
-          <th>N° pedido</th>
-          <th>Fecha</th>
-          <th>Cliente</th>
-          <th>Estado</th>
-          <th>Total</th>
-          <th>Acción</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>N° pedido</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Estado</th>
+            <th>Total</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+
         <tr>
           <td>00000000001</td>
           <td>21/09/2021</td>
@@ -68,10 +72,19 @@
           <td>Pendiente</td>
           <td>$475,000</td>
           <td>
-            <form action="modificarpedido.html">
-              <input type="submit" value="Modificar" />
-            </form>
-            <input type="submit" value="Eliminar" />
+            <a href="modificarpedido.html" class="btntable">Modificar</a>
+            <a href="#" class="btntable">Eliminar</a>
+          </td>
+        </tr>
+        <tr>
+          <td>00000000002</td>
+          <td>21/09/2021</td>
+          <td>Camila Andrea Nuñez</td>
+          <td>Cancelado</td>
+          <td>$200,000</td>
+          <td>
+            <a href="modificarpedido.html" class="btntable">Modificar</a>
+            <a href="#" class="btntable">Eliminar</a>
           </td>
         </tr>
       </table>

@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crear Pedido</title>
-</head>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/eff4ab0e98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <div style="clear: both">
-        <img src="img/logo_pedidos.png" alt="img/no-image.png" width="120" height="60" style="float: left">
-        <h1 style="text-align:center">RappiPedidosGrp5</h1>
-      </div>
-      <br>
-      <br>
-      <nav class="navegacion">
-        <ul class="menu">
+  <body>
+    <header>
+      <div class="ancho">
+        <div class="logo">
+          <img src="img/logo_pedidos.png" alt="" />
+        </div>
+
+        <h1>RappiPedidosGrp5</h1>
+
+        <a href="index.html" class="btn">Cerrar Sesión</a>
+
+        <nav class="navegacion">
+          <ul class="menu">
             <li><a href="principal.html">Principal</a></li>
             <li><a href="creaciondeusu.html">Usuario</a></li>
             <li><a href="productos.html">Productos</a></li>
-            <li><a href="pedidos.html">Pedidos</a>
-                <ul class="submenu">
-                    <li><a href="crearpedido.html">Crear Pedido</a></li>
-                    <li><a href="modificarpedido.html">Modificar Pedido</a></li>
-                    <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
-                    <li><a href="consultaReporte.html">Reporte Pedido</a></li>
-                </ul>
+            <li>
+              <a href="pedidos.html">Pedidos</a>
+              <ul class="submenu">
+                <li><a href="crearpedido.html">Crear Pedido</a></li>
+                <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+                <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+                <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+              </ul>
             </li>
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <h2>Creación de pedido</h2>
     <div>
@@ -72,6 +95,7 @@
           disabled
           required
         />
+        <br /><br />
         <label for="direccion">Dirección pedido:</label>
         <input
           type="text"
@@ -85,39 +109,36 @@
         <select name="estado" id="estado">
           <option value="pendiente">Pendiente</option>
 
-        <option value="entregado">Entregado</option>
+          <option value="entregado">Entregado</option>
 
-        <option value="cancelado">Cancelado</option>
-      </select>
-    </form>
-  </div>
-  <br />
-  <hr />
-    <h2>Buscar Productos</h2>
-    <form action="#">
-      <input type="search" />
-      <button type="submit">Buscar Producto</button>
-      <input type="hidden" />
-    </form>
+          <option value="cancelado">Cancelado</option>
+        </select>
+      </form>
+    </div>
+
     <br />
     <hr />
-    <div>
+    <div class="tabla">
       <h2>Buscar Productos</h2>
       <form action="#">
-        <input type="search" />
-        <button type="submit">Buscar Producto</button>
+        <input class="buscar" type="search" placeholder="Escribe el producto" />
+        <button type="button">Buscar Producto</button>
+
         <input type="hidden" />
       </form>
       <br />
-      <table border="3">
-        <tr>
-          <th>Código</th>
-          <th>Nombre Producto</th>
-          <th>Cantidad</th>
-          <th>Valor Unitario</th>
-          <th>Subtotal</th>
-          <th>Acción</th>
-        </tr>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nombre Producto</th>
+            <th>Cantidad</th>
+            <th>Valor Unitario</th>
+            <th>Subtotal</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+
         <tr>
           <td>00000000001</td>
           <td>Motosierra</td>
@@ -125,19 +146,23 @@
           <td>150000</td>
           <td>150000</td>
           <td>
-            <input type="submit" value="Eliminar" />
+            <a href="#" class="btntable">Eliminar</a>
           </td>
         </tr>
       </table>
-      <br />
+    </div>
+
+    <br /><br />
+    <div class="total">
       <label for="total">Total:</label>
       <input type="text" id="total" name="total" disabled />
     </div>
-      <br /><br />
-      <input type="submit" value="Imprimir" />
-      <input type="submit" value="Crear Pedido" />
-      <form action="pedidos.html">
-        <input type="submit" value="Cancelar Pedido" />
-      </form>
+
+    <br /><br />
+    <div>
+      <a href="pedidos.html" class="btnoption">Cancelar Pedido</a>
+      <a href="#" class="btnoption">Crear Pedido</a>
+      <a href="#" class="btnoption">Imprimir</a>
+    </div>
   </body>
 </html>
