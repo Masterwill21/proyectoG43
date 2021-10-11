@@ -233,7 +233,6 @@ select:focus {
 }
 
 .buscar:hover {
-  width: 280px;
   border-color: #ab5dec;
   box-shadow: 0 0 5px #3d1f72;
 }
@@ -247,6 +246,13 @@ button {
   border: 2px solid #3d1f72;
   border-radius: 10px;
 }
+
+button:hover {
+  border-color: #ab5dec;
+  box-shadow: 0 0 5px #3d1f72;
+  background-color:#3d1f72;
+}
+
 
 .total {
   margin: 0px 170px;
