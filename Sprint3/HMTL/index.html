@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio de sesión</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="css/estilos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700;800&display=swap"
       rel="stylesheet"
@@ -18,35 +18,43 @@
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
       rel="stylesheet"
     />
-</head>
+    <script
+      src="https://kit.fontawesome.com/eff4ab0e98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="ancho">
+        <div class="logo">
+          <img src="img/logo_pedidos.png" alt="" />
+        </div>
 
-  <header>
-    <div class="ancho">
-      <div class="logo">
-        <img src="img/logo_pedidos.png" alt="" />
+        <h1>RappiPedidosGrp5</h1>
+
+        <nav class="navegacion"></nav>
       </div>
+    </header>
 
-      <h1>RappiPedidosGrp5</h1>
+    <h3>
+      iniciar sesión con su usuario y contraseña. 
+    </h3>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Inicio de sesión:</legend>
+        <label for="fname">Usuario:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="pwd">Contraseña:</label><br />
+        <input type="password" id="pwd" name="pwd" /><br /><br />
+        <a class="btninicio" href="principal.html">Ingresar</a>
+      </fieldset>
+    </form>
 
-      <nav class="navegacion">
-        
-      </nav>
+    <div class="proyecto" style="text-align: center">
+      <p>
+        Este es un proyecto de Ciclo 3 - MisionTic 2022
+      </p>
     </div>
-  </header>
-
-  <p>Aqui podra iniciar sesión con su usuario de cliente o administrador. Este es un proyecto de Ciclo 3 - MisionTic
-    2022</p>
-  <form action="/action_page.php">
-    <fieldset style="margin:100px; text-align:center;">
-      <legend>Inicio de sesión:</legend>
-      <label for="fname">Usuario:</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label for="pwd">Contraseña:</label><br>
-      <input type="password" id="pwd" name="pwd"><br><br>
-      <a href="principal.html">Ingresar</a>
-    </fieldset>
-  </form>
-</body>
+  </body>
 </html>

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Principal</title>
     <link rel="stylesheet" href="css/estilos.css" />
     <link
@@ -19,64 +18,71 @@
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
       rel="stylesheet"
     />
-</head>
+    <script
+      src="https://kit.fontawesome.com/eff4ab0e98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <header>
-    <div class="ancho">
-      <div class="logo">
-        <img src="img/logo_pedidos.png" alt="" />
+  <body>
+    <header>
+      <div class="ancho">
+        <div class="logo">
+          <img src="img/logo_pedidos.png" alt="" />
+        </div>
+
+        <h1>RappiPedidosGrp5</h1>
+
+        <a href="index.html" class="btn">Cerrar Sesión</a>
+
+        <nav class="navegacion">
+          <ul class="menu">
+            <li><a href="principal.html">Principal</a></li>
+            <li><a href="creaciondeusu.html">Usuario</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li>
+              <a href="pedidos.html">Pedidos</a>
+              <ul class="submenu">
+                <li><a href="crearpedido.html">Crear Pedido</a></li>
+                <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+                <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+                <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <h1>RappiPedidosGrp5</h1>
-
-      <a href="index.html" class="btn">Cerrar Sesión</a>
-
-      <nav class="navegacion">
-        <ul class="menu">
-          <li><a href="principal.html">Principal</a></li>
-          <li><a href="creaciondeusu.html">Usuario</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li>
-            <a href="pedidos.html">Pedidos</a>
-            <ul class="submenu">
-              <li><a href="crearpedido.html">Crear Pedido</a></li>
-              <li><a href="modificarpedido.html">Modificar Pedido</a></li>
-              <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
-              <li><a href="consultaReporte.html">Reporte Pedido</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <p>
+    </header>
     <h3>Integrantes:</h3>
-    <ul>
-      <li>William Fernando Hernandez Galvis  SCRUM MASTER</li>
-      <li>Lorena Maritza Neuta Palacios      DEVELOPER</li>
-      <li>Camila Alexandra Rondon Archila	   QA ANALYST (TESTER)</li>
-      <li>Karen Jiliam Cortes Navarro        DESIGNER</li>
-      <li>Abner Emilio Villegas Barrera      STAKEHOLDERS
-      <li>Yulie Briyith Bernal Castillo      PRODUCT OWNER</li>
-    </ul>
-    <br>
+    <div class="integrantes">
+      <ul>
+        <li>William Fernando Hernandez Galvis   SCRUM MASTER</li>
+        <li>Lorena Maritza Neuta Palacios   DEVELOPER</li>
+        <li>Camila Alexandra Rondon Archila   QA ANALYST (TESTER)</li>
+        <li>Karen Jiliam Cortes Navarro   DESIGNER</li>
+        <li>Abner Emilio Villegas Barrera   STAKEHOLDERS</li>
+        <li>Yulie Briyith Bernal Castillo  PRODUCT OWNER</li>
+      </ul>
+    </div>
+   
     <h3>Descripción del proyecto:</h3>
     <p>
-      Crear un sistema web para la realización de pedidos donde los clientes puedan iniciar sesión de
-    forma segura, crear pedidos donde relacionan los productos disponibles, validando existencias y 
-    actualizando la cantidad de inventario y muestra reporte de pedidos totalizando el valor de los
-    productos seleccionados.
+      Crear un sistema web para la realización de pedidos donde los clientes
+      puedan iniciar sesión de forma segura, crear pedidos donde relacionan los
+      productos disponibles, validando existencias y actualizando la cantidad de
+      inventario y muestra reporte de pedidos totalizando el valor de los
+      productos seleccionados.
     </p>
-  <br>
-  <div class="col " style="text-align: center;">
-    <p>¡Bienvenido al sistema de pedidos Web RappiPedidosGrp5! <span id="datetime"></span></p>
-    <a href="mailto:soportepedidos@gmail.com">Contactenos</a>
-  </div>
-  <script>
-    var dt = new Date();
-    document.getElementById("datetime").innerHTML = dt.toLocaleString();
-  </script>
-</body>
+    <div class="col" style="text-align: center">
+      <p>
+        ¡Bienvenido al sistema de pedidos Web RappiPedidosGrp5!
+        <span id="datetime"></span>
+      </p>
+      <a class="contactenos" href="mailto:soportepedidos@gmail.com">Contactenos</a>
+    </div>
+    <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+  </body>
 </html>

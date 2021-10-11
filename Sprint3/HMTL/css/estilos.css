@@ -205,7 +205,6 @@ form {
   margin: 0 auto;
   width: 90%;
   border-radius: 3px;
-
 }
 
 input,
@@ -225,33 +224,31 @@ select:focus {
   border-color: #ab5dec;
 }
 
-.buscar{
+.buscar {
   padding: 9px 10px 9px 32px;
-  outline:none;
+  outline: none;
   font: size 18px;
-  border-radius:25px;
+  border-radius: 25px;
   width: 280px;
 }
 
-.buscar:hover{
-width:280px;
-border-color:#ab5dec ;
-box-shadow: 0 0 5px #3d1f72;
+.buscar:hover {
+  width: 280px;
+  border-color: #ab5dec;
+  box-shadow: 0 0 5px #3d1f72;
 }
 
-button{
-  color:#ab5dec;
+button {
+  color: #ab5dec;
   font-weight: bold;
-  font-size:15px;
+  font-size: 15px;
   text-align: center;
   padding: 5px 5px;
-  border:2px solid #3d1f72;
-  border-radius:10px;
-
+  border: 2px solid #3d1f72;
+  border-radius: 10px;
 }
 
-
-.total{
+.total {
   margin: 0px 170px;
   padding: auto;
   float: right;
@@ -259,16 +256,114 @@ button{
 
 .btnoption {
   float: right;
-  color:#ab5dec;
+  color: #ab5dec;
   font-weight: bold;
-  font-size:15px;
+  font-size: 15px;
   text-align: center;
   padding: 5px 5px;
   margin: 10px 10px;
-  border:2px solid #3d1f72;
-  border-radius:10px;
+  border: 2px solid #3d1f72;
+  border-radius: 10px;
 }
 
-.btnoption:hover{
-  background-color:#3d1f72;
+.btnoption:hover {
+  background-color: #3d1f72;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ab5dec;
+  margin: 30px 10px;
+}
+
+.integrantes {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  margin: 30px 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  margin: 30px 10px;
+}
+
+.col {
+  background: #3d1f72;
+  width: 100%;
+  height: 150px;
+  float: left;
+  text-align: center;
+}
+
+.col p {
+  color: #ab5dec;
+  font-size: 35px;
+  font-family: "Dosis", sans-serif;
+}
+
+.contactenos {
+  border-style: dashed;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 10px;
+  color: #00ffe2;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.contactenos:hover {
+  background: #ab5dec;
+  box-shadow: 0 0 10px #ab5dec, 0 0 40px #ab5dec, 0 0 80px #ab5dec;
+  transition-delay: 0.3s;
+}
+
+fieldset {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btninicio {
+  color: #ab5dec;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 5px;
+  border: 2px solid #3d1f72;
+  border-radius: 10px;
+}
+
+.btninicio:hover {
+  background-color: #3d1f72;
+}
+
+.proyecto {
+  background: #3d1f72;
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  float: left;
+  text-align: center;
+}
+
+.proyecto p {
+  color: #ab5dec;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+
 }
