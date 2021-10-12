@@ -220,3 +220,37 @@ width:280px;
 border-color:#ab5dec ;
 box-shadow: 0 0 5px #3d1f72;
 }
+
+.btdesde {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ab5dec;
+  margin: 40px 20px;
+}
+.bthasta {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ab5dec;
+  margin: 40px 20px;
+}
+
+.btconsultar{
+width:230px;
+border-color:#ab5dec ;
+box-shadow: 0 0 5px #3d1f72;
+}
+.btndes{
+  padding: 9px 10px 9px 32px;
+  outline:none;
+  font: size 18px;
+  border-radius:25px;
+  width: 280px;
+}
+
+.btndes:hover{
+width:280px;
+border-color:#ab5dec ;
+box-shadow: 0 0 5px #3d1f72;
+}
