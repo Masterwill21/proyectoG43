@@ -50,19 +50,17 @@
       </div>
     </header>
 
-    <div>
+    <div style="text-align: center;">
       <form action="#">
         <h2>Consulta de Reportes</h2>
 
         <label for="fdesde">Desde:</label>
-        <input type="date" name="fdesde" id="fdesde" required />
-        <br />
-
+        <input type="date" class="btdesde" name="fdesde" id="fdesde" required />
         <label for="fhasta">Hasta:</label>
-        <input type="date" name="fhasta" id="fhasta" required />
+        <input type="date" class="btdesde" name="fhasta" id="fhasta" required />
         <br />
         <br />
-        <input type="submit" value="Consultar" />
+        <input type="submit" class="btconsultar" value="Consultar" />
       </form>
     </div>
     <br />
@@ -126,9 +124,9 @@
     <br />
     <br />
     <br />
-    <input type="submit" value="Exportar" />
     <form action="pedidos.html">
-      <input type="submit" value="cerrar" />
+    <input type="submit" class="btnoption" value="Exportar" />
+    <input type="submit" class="btnoption" value="cerrar" />
     </form>
   </body>
 </html>
