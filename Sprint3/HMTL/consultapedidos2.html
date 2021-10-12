@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+    <title>consultar Pedidos</title>
+  </head>
+
+ <link rel="stylesheet" href="estilos.css">
+  <body>
+    <div style="clear: both">
+      <img  
+        src="img/logo_pedidos.png"
+        alt="img/no-image.png"
+        width="120"
+        height="60"
+        style="float: left"
+      />
+      <h1 style="text-align: center">RappiPedidosGrp5</h1>
+    </div>
+    <br />
+    <br />
+    <nav class="navegacion">
+      <ul class="menu">
+        <li><a href="principal.html">Principal</a></li>
+        <li><a href="creaciondeusu.html">Usuario</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li>
+          <a href="pedidos.html">Pedidos</a>
+          <ul class="submenu">
+            <li><a href="crearpedido.html">Crear Pedido</a></li>
+            <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+            <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+            <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+      <title>consultar Pedidos</title>
+    </head>
+    <div style="text-align: center;">
+      <form action="#">
+        <h2>Consulta de pedidos</h2>
+
+        <label for="idusuario">Id Usuario:</label>
+        <input type="text" class="btdesde"id="idusuario" size="15" value="Digite Cedula ID" />
+
+        <label for="numeropedido">N° Pedido:</label>
+        <input
+          type="text"class="btdesde"id="numeropedido" size="15"value="Digite N° pedido"/>
+        <br />
+        <input type="submit" class="btconsultar"value="Consultar" />
+      </form>
+    </div>
+    <br />
+    <br />
+
+    <table border="3">
+      <thead>
+        <tr>
+          <th>N° pedido</th>
+          <th>Fecha</th>
+          <th>Cliente</th>
+          <th>Estado</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>00000000001</td>
+          <td>21-09-2021</td>
+          <td>Maria Cecilia Gomez</td>
+          <td>Pendiente</td>
+          <td>475000</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <form action="pedidos.html">
+    <input type="submit" class="btnoption"value="imprimir" />
+    <input class="btnoption"type="submit" value="cerrar" />
+    </form>
+  </body>
+</html>
