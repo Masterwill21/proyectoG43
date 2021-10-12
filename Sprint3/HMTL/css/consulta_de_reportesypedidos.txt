@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** encabezado**/
+header {
+  font-family: "Dosis", sans-serif; /* fuente principal*/
+  background-color: ghostwhite;
+  width: 100%;
+  height: 70px;
+}
+
+.ancho {
+  /*clases*/
+  width: 100%;
+  height: 70px;
+  margin: auto;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  float: left;
+}
+
+img {
+  width: 150px;
+  height: 90px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+h1 {
+  float: left;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #3d1f72;
+  font-family: "Seymour One", sans-serif;
+  margin-top: 10px;
+}
+nav {
+  width: 70%;
+  height: 70px;
+  float: left;
+  text-align: center;
+}
+
+.navegacion {
+  width: 100%;
+  margin: 30px auto;
+  background: #3d1f72;
+}
+.navegacion ul {
+  list-style: none;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 50px;
+  color: #ab5dec;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #00ffe2;
+  transition: all 0.3s;
+}
+
+.submenu {
+  position: absolute;
+  background: #3d1f72;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: #ab5dec;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tabla div {
+  font-family: "Varela", sans-serif;
+  color: rgb(80, 80, 80);
+  margin: 150px auto;
+  border-collapse: collapse;
+  width: 600px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ab5dec;
+  margin: 30px 10px;
+}
+
+table {
+  background-color: white;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-style: double;
+}
+.btnsubmit {
+  margin: 0px;
+  padding: 0px;
+}
+thead {
+  background-color: #3d1f72;
+  border-bottom: solid 5px #00ffe2;
+  color: #00ffe2;
+  text-align: center;
+  font-size: 20px;
+}
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr:hover td {
+  background-color: #b6f7f2;
+  color: #3d1f72;
+  font-weight: bold;
+}
+form {
+  padding: 10px;
+  color: rgb(80, 80, 80);
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 3px;
+}
+
+input,
+select {
+  outline: none;
+  border-radius: 3px;
+  padding: 5px;
+  width: 170px;
+  margin-left: 20px;
+  margin-right: 20px;;
+}
+button{
+  color:#ab5dec;
+  font-weight: bold;
+  font-size:15px;
+  text-align: center;
+  padding: 5px 5px;
+  border:2px solid #3d1f72;
+  border-radius:10px;
+}
+.total{
+  margin: 0px 170px;
+  padding: auto;
+  float: right;
+}
+
+.btnoption {
+  float: right;
+  color:#ab5dec;
+  font-weight: bold;
+  font-size:15px;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 10px 10px;
+  border:2px solid #3d1f72;
+  border-radius:10px;
+}
+
+.btdesde {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ab5dec;
+  margin: 40px 20px;
+}
+.bthasta {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ab5dec;
+  margin: 40px 20px;
+}
+
+.btconsultar{
+width:230px;
+border-color:#ab5dec ;
+box-shadow: 0 0 5px #3d1f72;
+}
+.btndes{
+  padding: 9px 10px 9px 32px;
+  outline:none;
+  font: size 18px;
+  border-radius:25px;
+  width: 280px;
+}
+
+.btndes:hover{
+width:280px;
+border-color:#ab5dec ;
+box-shadow: 0 0 5px #3d1f72;
+}
