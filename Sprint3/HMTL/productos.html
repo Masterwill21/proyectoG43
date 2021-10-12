@@ -1,94 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Productos</title>
-</head>
+<header>
+    <!-- Bootswatch Cosmo Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/App.css">
+    <div class="ancho">
+        <div class="logo">
+            <img src="img/logo_pedidos.png" alt="" />
+        </div>
+
+        <h1>RappiPedidosGrp5</h1>
+
+        <a href="index.html" class="btn">Cerrar Sesión</a>
+
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="principal.html">Principal</a></li>
+                <li><a href="creaciondeusu.html">Usuario</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li>
+                    <a href="pedidos.html">Pedidos</a>
+                    <ul class="submenu">
+                        <li><a href="crearpedido.html">Crear Pedido</a></li>
+                        <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+                        <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+                        <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
 
 <body>
-    <div style="clear: both">
-        <img src="img/logo_pedidos.png" alt="img/no-image.png" width="120" height="60" style="float: left">
-        <h1 style="text-align:center">RappiPedidosGrp5</h1>
-      </div>
-      <br>
-      <br>
-      <nav class="navegacion">
-        <ul class="menu">
-            <li><a href="principal.html">Principal</a></li>
-            <li><a href="creaciondeusu.html">Usuario</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="pedidos.html">Pedidos</a>
-                <ul class="submenu">
-                    <li><a href="crearpedido.html">Crear Pedido</a></li>
-                    <li><a href="modificarpedido.html">Modificar Pedido</a></li>
-                    <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
-                    <li><a href="consultaReporte.html">Reporte Pedido</a></li>
-                </ul>
-            </li>
-        </ul>
-      </nav>
-    
-    <div>
-      <h2>Consulta de productos</h2>
-      <form action="#">
-      <label for="idproducto">código producto :</label>
-      <input type="text" id="idproducto" size="15" value="Digite ID producto">
-      <br>
-      <label for="nombreproducto">Nombre del producto:</label>
-      <input type="text" id="nombreproducto" size="30" value="Digite nombre producto">
-      <br>
-      <br>
-      <input type="submit" value="Consultar" >
-      </form>
-      <form action="crearproducto.html"> <!--se realiza otro form para que pueda referenciar el html de creación-->
-        <input type="submit" value="Nuevo Producto"  > 
-      </form>
-    </div>
-    <br>
-    <br>
-   
-    <table border="3">
-        <thead>
-            <tr>
-              <th>imagen</th>
-                <th>Código Producto</th>
-                <th>Nombre Producto</th>
-                <th>Estado</th>
-                <th>Cantidad</th>
-                <th>Costo Unitario</th>
-                <th>Costo Total</th>
-                <th>Precio Unitario</th>
-                <th>Precio Total</th>
-                
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td><img src="#" alt="imagen" width="60"></td>
-                <td>00000000001</td>
-                <td>Martillo 13 onzas</td>
-                <td>Activo</td>
-                <td>10</td>
-                <td>6000</td>
-                <td>60000</td>
-                <td>11000</td>
-                <td>110000</td>
-            
-            </tr>
-        </tbody>
-    </table>  
-    <br>
-    <br>
-    <br>
-    <input type="submit" value="imprimir">
-    <form action="principal.html">
-        <input type="submit" value="cerrar"> 
-      </form>
-   
+    <div class="container">
+        <!-- APPLICATION -->
+        <div id="App" class="row pt-5">
+
+            <!-- FORM -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Agregar un producto</h4>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="price" step="0.01" placeholder="Product Price" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="year" min="1900" max="2099" step="1" value="2018" class="form-control">
+                        </div>
+                        <div name="subida-imagenes" type="POST" enctype="multipart/formdata">
+                            <input type="file" name="imagen" />
+                        </div>
+                        <input type="submit" value="Save" class="btn btn-primary btn-block">
+
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRODUCTS LIST -->
+            <div id="product-list" class="col-md-8"></div>
+        </div>
+    </div>
+
+    <script src="js//App.js" type="module"></script>
 
 </body>
 
