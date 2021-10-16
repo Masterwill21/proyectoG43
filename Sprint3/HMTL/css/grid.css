@@ -1,0 +1,112 @@
+.container {
+  max-width: 900px; /* tamaño maximo de la rejilla */
+  margin: auto; /* para que ae alinee al centro */
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
+}
+
+/* se encarga de configurar las colomnas en horizontal */
+.row {
+  display: flex;
+  padding: 10px;
+}
+
+/* Dar tamaño a las columnas */
+.col-1 {
+  width: calc(100% / 12);
+  /* border: 1px solid red; */
+}
+.col-2 {
+  width: calc(100% / 12 * 2);
+  /* border: 1px solid red; */
+}
+.col-3 {
+  width: calc(100% / 12 * 3);
+  /* border: 1px solid red; */
+}
+.col-4 {
+  width: calc(100% / 12 * 4);
+  /* border: 1px solid red; */
+}
+.col-5 {
+  width: calc(100% / 12 * 5);
+  /* border: 1px solid red; */
+}
+.col-6 {
+  width: calc(100% / 12 * 6);
+  /* border: 1px solid red; */
+}
+.col-7 {
+  width: calc(100% / 12 * 7);
+  /* border: 1px solid red; */
+}
+.col-8 {
+  width: calc(100% / 12 * 8);
+  /* border: 1px solid red; */
+}
+.col-9 {
+  width: calc(100% / 12 * 9);
+  /* border: 1px solid red; */
+}
+.col-10 {
+  width: calc(100% / 12 * 10);
+  /* border: 1px solid red; */
+}
+.col-11 {
+  width: calc(100% / 12 * 11);
+  /* border: 1px solid red; */
+}
+.col-12 {
+  width: calc(100% / 12 * 12);
+  /* border: 1px solid red; */
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding: 10px;
+}
+
+.col-1 img,
+.col-2 img,
+.col-3 img,
+.col-4 img,
+.col-5 img,
+.col-6 img,
+.col-7 img,
+.col-8 img,
+.col-9 img,
+.col-10 img,
+.col-11 img,
+.col-12 img {
+  width: 100%;
+}
+
+.no-desk {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .no-desk {
+    display: initial;
+  }
+  .row {
+    display: inline;
+    padding: 10px;
+  }
+}

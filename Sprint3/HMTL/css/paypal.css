@@ -1,0 +1,18 @@
+body {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  font-family: helvetica;
+  font-size: 14px;
+}
+
+.content_paypal a {
+  color: var(--green-color);
+}
