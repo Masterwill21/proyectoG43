@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>MARLUKA</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <div class="ancho">
+        <div class="logo">
+            <img src="img/logo_pedidos.png" width="150px" height="90px">
+        </div>
+
+        <h1>RappiPedidosGrp5</h1>
+
+        <a href="index.html" class="btn">Cerrar Sesión</a>
+
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="principal.html">Principal</a></li>
+                <li><a href="creaciondeusu.html">Usuario</a></li>
+                <li><a href="catalogo.html">Productos</a></li>
+                <li>
+                    <a href="pedidos.html">Pedidos</a>
+                    <ul class="submenu">
+                        <li><a href="crearpedido.html">Crear Pedido</a></li>
+                        <li><a href="modificarpedido.html">Modificar Pedido</a></li>
+                        <li><a href="Consultapedidos.html">Consultar Pedido</a></li>
+                        <li><a href="consultaReporte.html">Reporte Pedido</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</head>
+
+<body>
+    <!-- Aquí empieza el navbar -->
+
+    <!-- Aquí acaba el navbar -->
+
+    <!-- Empiezan Formulario Ventas -->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="modulo_pago">
+                    <div class="">
+                        <img src="img/box2.png" alt="" />
+                    </div>
+
+                    <h3>Código 5012</h3>
+                    <p>
+                        Tenis Sybilla Mujer Moda HAREF color negro mate
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="modulo_pago">
+                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YMU7BM2HU272J&lc=ES&item_name=Caja%20de%20Gatitos&amount=10%2e00&currency_code=EUR&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHosted" method="POST" class="form">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" />
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" />
+
+                        <label for="phone">Teléfono</label>
+                        <input type="text" name="phone" />
+
+                        <label for="phone">cantidad</label>
+                        <input type="text" name="cantidad" />
+
+                        <label for="phone">precio</label>
+                        <input type="text" name="total" />
+
+                        <button class="main_button" type="submit" name="submit">
+                Confirmar pago
+              </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empiezan Formulario Beneficios -->
+
+    <!-- Inicio de footer -->
+    <footer class="footer">
+        <div class="option">
+            <p>Terminos y condiciones</p>
+        </div>
+        <div class="option">
+            <p>
+                Designed with ❤️ by
+                <a href="https://twitter.com/marluka2">@marluka</a>
+            </p>
+        </div>
+    </footer>
+    <!-- Fin de Footer -->
+
+    <!-- Script -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+<!-- Cierra body -->
+
+</html>
+<!-- Cierra html -->
